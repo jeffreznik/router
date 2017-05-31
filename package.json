@@ -18,7 +18,7 @@
     "react": "^15"
   },
   "dependencies": {
-    "@jeffreznik/utils": "^0.1.0",
+    "@jeffreznik/utils": "^0.2.0",
     "path-to-regexp": "^1.7.0"
   },
   "devDependencies": {
