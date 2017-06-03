@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import pathToRegexp from 'path-to-regexp'
 
 class Router extends React.Component {
@@ -153,7 +154,7 @@ class Router extends React.Component {
 }
 
 Router.childContextTypes = {
-  router: React.PropTypes.object
+  router: PropTypes.object
 }
 
 export default Router

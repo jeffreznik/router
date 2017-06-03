@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const withRouter = WrappedComponent => {
   class WithRouter extends React.Component {
@@ -7,7 +8,7 @@ const withRouter = WrappedComponent => {
     }
   }
   WithRouter.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
   }
   return WithRouter
 }
