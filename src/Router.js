@@ -10,7 +10,7 @@ class Router extends React.Component {
     this.getPath = this.getPath.bind(this)
     this.testPath = this.testPath.bind(this)
     this.getParams = this.getParams.bind(this)
-    this.isOnPath = this.isOnPath.bind(this)
+    this.isOnRoute = this.isOnRoute.bind(this)
     this.push = this.push.bind(this)
     this.pushRoute = this.pushRoute.bind(this)
     this.replace = this.replace.bind(this)
@@ -71,7 +71,7 @@ class Router extends React.Component {
       return false
   }
 
-  // returns true or false if path is the specified named path
+  // returns true or false if path matches the named route
   testPath(name, path) {
     const route = this.state.routes[name]
     if (!route)
@@ -82,8 +82,8 @@ class Router extends React.Component {
       return route.path === path
   }
 
-  // returns true/false if the current path is on named path
-  isOnPath(name) {
+  // returns true/false if the current path matches the named route
+  isOnRoute(name) {
     return this.testPath(name, this.props.path)
   }
 

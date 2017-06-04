@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@jeffreznik/utils": "^0.2.0",
+    "classnames": "^2.2.5",
     "path-to-regexp": "^1.7.0",
     "prop-types": "^15.5.10"
   },
